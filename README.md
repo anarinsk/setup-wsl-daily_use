@@ -80,6 +80,10 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
 ```
 
+## Use Docker 
+
+- [setup for docker composer ](https://github.com/anarinsk/setup-docker_compose) 참고 
+
 ## Resources 
 
 - [Windows Subsystem for Linux Installation Guide for Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)- 
