@@ -84,6 +84,10 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
 
 - [setup for docker composer ](https://github.com/anarinsk/setup-docker_compose) 참고 
 
+## Misc
+
+- 리눅스 정보 보기 `wslfetch`
+
 ## Resources 
 
 - [Windows Subsystem for Linux Installation Guide for Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)- 
