@@ -88,6 +88,10 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
 
 - [setup for docker composer](https://github.com/anarinsk/setup-docker_compose) 참고 
 
+## gh for ubuntu 
+
+- [설치 방법](https://github.com/cli/cli/blob/trunk/docs/install_linux.md)
+
 ## Misc
 
 - 리눅스 정보 보기 `wslfetch`
