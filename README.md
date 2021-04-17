@@ -82,11 +82,11 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
 
 ## Setup Windows Terminal 
 
-[LINK](https://github.com/anarinsk/setup-windows_terminal/blob/main/README.md)
+[Setup for Windows Terminal](https://github.com/anarinsk/setup-windows_terminal/blob/main/README.md) 참고 
 
 ## Use Docker 
 
-- [setup for docker composer ](https://github.com/anarinsk/setup-docker_compose) 참고 
+- [setup for docker composer](https://github.com/anarinsk/setup-docker_compose) 참고 
 
 ## Misc
 
