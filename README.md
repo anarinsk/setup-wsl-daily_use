@@ -80,6 +80,10 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
 ```
 
+## Setup Windows Terminal 
+
+[LINK](https://github.com/anarinsk/setup-windows_terminal/blob/main/README.md)
+
 ## Use Docker 
 
 - [setup for docker composer ](https://github.com/anarinsk/setup-docker_compose) 참고 
