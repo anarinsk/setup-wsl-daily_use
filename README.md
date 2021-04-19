@@ -60,6 +60,7 @@ sudo apt-get update && sudo apt-get upgrade -y
 ## Install zsh 
 
 - 보다 쾌적한 터미널 환경을 위해서 zsh를 설치한다. 
+- `sudo -i` 상태에서 실행하면 안된다! 
 
 ```shell
 sudo apt-get install zsh
