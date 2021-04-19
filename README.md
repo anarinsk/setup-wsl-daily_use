@@ -10,11 +10,17 @@ WSL 단에서 쓸 수 있는 명령어들을 알아보자.
 1. Microsoft Store에서 다운 받아 쓴다. Windows 10, 검색에 "Microsoft Store"
 2. `wsl --install -d DISTRO-NAME` 명령어로 설치한다. 
 
+### List 
+
+```shell
+wsl --list --all 
+wsl -l 
+```
 
 ### Kernel update 
 
 ```shell 
-> wsl --update
+wsl --update
 ```
 
 - Windows Update 설정 > 고급옵션 > "Windows를 업데이트할 때 다른 Microsoft 제품에 대한 업데이트 받기" 
@@ -25,6 +31,12 @@ WSL 단에서 쓸 수 있는 명령어들을 알아보자.
 ```shell
 wsl --shutdown DISTRO-NAME
 wsl --unregister DISTRO-NAME
+```
+
+### Set default Distros 
+
+```shell
+wsl --setdefault <DistributionName>
 ```
 
 ## Ubuntu: Quick Take-off 
