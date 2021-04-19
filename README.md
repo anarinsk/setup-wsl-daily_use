@@ -104,4 +104,4 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
 
 ## Resources 
 
-- [Windows Subsystem for Linux Installation Guide for Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)- 
+- [Windows Subsystem for Linux Installation Guide for Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
