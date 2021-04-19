@@ -72,14 +72,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
     plugins=(git alias-tips zsh-autosuggestions zsh-syntax-highlighting)
     ```
 
-## Fix Python Symlink 
-
-- 파이썬 심링크를 바꿔주자. zsh을 깔고나면 권고 메시지를 띄운다. 
-
-```shell
-sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
-```
-
 ## Setup Windows Terminal 
 
 [Setup for Windows Terminal](https://github.com/anarinsk/setup-windows_terminal/blob/main/README.md) 참고 
@@ -94,9 +86,19 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
 - 아마도 깃헙 로그인 기능이 제일 유용할 것 같다. 
 - `> gh auth login`
   - 여러가지 선택지가 나온다. 
-  - 마지막에 Token을 선택해야 한다. id/pw 로그인은 사라질 기능이다. 있어도 쓰지 말자. 
+  - 마지막에 Token을 선택해야 한다. id/pw 로그인은 사라질 기능이다. 있어도 쓰지 말자.
 
 ## Misc
+
+### Fix Python Symlink 
+
+- 파이썬 심링크를 바꿔주자. zsh을 깔고나면 권고 메시지를 띄운다. 
+
+```shell
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
+```
+
+### Other simple commands 
 
 - 리눅스 정보 보기 `wslfetch`
 
