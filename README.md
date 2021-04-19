@@ -7,8 +7,27 @@ WSL 단에서 쓸 수 있는 명령어들을 알아보자.
 
 ### Install 
 
-1. Microsoft Store에서 다운 받아 쓴다. Windows 10, 검색에 "Microsoft Store"
-2. `wsl --install -d DISTRO-NAME` 명령어로 설치한다. 
+#### Microsoft Store
+
+- Microsoft Store에서 다운 받아 쓴다. Windows 10, 검색에 "Microsoft Store"
+- 스토어에서 Ubuntu를 검색하면 설치 가능한 배포이 뜬다. 
+- 컨셉은 Windows에 Ubuntu 설치 앱을 깔아 두고 이를 실행하면 새 Distro가 설치되는 개념이다. 
+
+#### With Terminal 
+
+- Store를 쓰기 싫거나 쓸 수 없을 때 
+- Terminal에서  
+
+```shell
+wsl -l -o
+wsl --list --online
+```
+
+- 설치 가능한 Distro를 확인한다. 
+
+```shell
+wsl --install -d <DISTRO-NAME> 
+```
 
 ### List 
 
