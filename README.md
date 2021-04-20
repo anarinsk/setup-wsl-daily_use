@@ -87,7 +87,7 @@ chsh -s `which zsh`
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 ```
 
-- logout 후 
+- zsh를 실행하면 zsh로 들어간다. logout 후 다시 로그인하자.  
 
 ```shell
 cd ${ZSH_CUSTOM1:-$ZSH/custom}/plugins
