@@ -120,7 +120,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 - 아마도 깃헙 로그인 기능이 제일 유용할 것 같다. 
 - `> gh auth login`
   - 여러가지 선택지가 나온다. 
-  - 마지막에 Token을 선택해야 한다. id/pw 로그인은 사라질 기능이다. 있어도 쓰지 말자.
+    - 순리대로 택한다. `github.com` > `https` > `token`
+    - 마지막에 반드시 Token을 선택해야 한다. id/pw 로그인은 사라질 기능이다. 있어도 쓰지 말자.
 
 ## Misc
 
