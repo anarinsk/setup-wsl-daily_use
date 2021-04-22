@@ -141,6 +141,10 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
 
 https://github.com/microsoft/wslg
 
+```shell
+apt-get install fonts-nanum fonts-nanum-coding fonts-nanum-extra
+```
+
 ## Resources 
 
 - [Windows Subsystem for Linux Installation Guide for Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
