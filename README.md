@@ -137,6 +137,10 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
 
 - 리눅스 정보 보기 `wslfetch`
 
+### How to use GUI app for Ubuntu 
+
+https://github.com/microsoft/wslg
+
 ## Resources 
 
 - [Windows Subsystem for Linux Installation Guide for Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
