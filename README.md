@@ -141,6 +141,8 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
 
 https://github.com/microsoft/wslg
 
+- 한글이 안 나올 때는 아래 명령어로 한글 폰트를 설치하자. 
+
 ```shell
 apt-get install fonts-nanum fonts-nanum-coding fonts-nanum-extra
 ```
