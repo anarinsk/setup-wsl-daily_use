@@ -50,14 +50,14 @@ wsl --update
 ### Uninstall distros 
 
 ```shell
-wsl --shutdown DISTRO-NAME
-wsl --unregister DISTRO-NAME
+wsl --shutdown <DISTRO-NAME>
+wsl --unregister <DISTRO-NAME>
 ```
 
 ### Set default Distros 
 
 ```shell
-wsl --setdefault <DistributionName>
+wsl --setdefault <DISTRO-NAME>
 ```
 
 ## Ubuntu: Quick Take-off 
