@@ -90,6 +90,7 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 ```
 
 - zsh를 실행하면 zsh로 들어간다. logout 후 다시 로그인하자.  
+  + 실제 우분투에서는 재부팅이다. 혼동하지 말자. 
 
 ```shell
 cd ${ZSH_CUSTOM1:-$ZSH/custom}/plugins
@@ -105,6 +106,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
     ```shell
     plugins=(git alias-tips zsh-autosuggestions zsh-syntax-highlighting)
     ```
+
+- native ubuntu에서는 화살표가 제대로 표시되지 않는다. [여기](http://programmingskills.net/archives/115)를 참고하자. 
 
 ## Setup Windows Terminal 
 
