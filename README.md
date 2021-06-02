@@ -74,7 +74,7 @@ sudo sed -i 's/security.ubuntu.com/mirror.kakao.com/g' /etc/apt/sources.list # s
 ### Update packages 
 
 ```shell
-sudo apt-get update && sudo apt-get upgrade -y
+sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y 
 ```
 
 
