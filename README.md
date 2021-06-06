@@ -125,7 +125,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
   - 여러가지 선택지가 나온다. 
     - 순리대로 택한다. `github.com` > `https` > `token`
     - 마지막에 반드시 Token을 선택해야 한다. id/pw 로그인은 사라질 기능이다. 있어도 쓰지 말자.
-
+    - 토큰 관리를 알아서 잘 하시기를... 
 ## Misc
 
 ### Fix Python Symlink 
