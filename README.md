@@ -85,7 +85,7 @@ sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y
 - `sudo -i` 상태에서 실행하면 안된다! 
 
 ```shell
-sudo apt-get install zsh
+apt-get install zsh
 chsh -s `which zsh`
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
