@@ -87,7 +87,7 @@ sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y
 ```shell
 sudo apt-get install zsh
 chsh -s `which zsh`
-curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 - zsh를 실행하면 zsh로 들어간다. logout 후 다시 로그인하자.  
