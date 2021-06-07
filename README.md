@@ -95,9 +95,11 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 
 ```shell
 cd ${ZSH_CUSTOM1:-$ZSH/custom}/plugins
-git clone https://github.com/djui/alias-tips.git 
-git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions 
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+sudo git clone https://github.com/djui/alias-tips.git
+sudo git clone https://github.com/zsh-users/zsh-autosuggestions
+sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+#git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions 
+#git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
 - nano 에디터를 열어 아래 부분을 수정해주자. `>nano ~/.zshrc`
