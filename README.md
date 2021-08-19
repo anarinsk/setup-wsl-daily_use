@@ -142,6 +142,7 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
 ### Other simple commands 
 
 - 리눅스 정보 보기 `wslfetch`
+- 아스키 아쿠아리움 https://askubuntu.com/questions/927441/how-do-i-install-asciiquarium/
 
 ### How to use GUI app for Ubuntu 
 
