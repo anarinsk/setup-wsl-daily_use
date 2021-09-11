@@ -78,6 +78,10 @@ sudo sed -i 's/security.ubuntu.com/mirror.kakao.com/g' /etc/apt/sources.list # s
 sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y 
 ```
 
+- 가끔 업데이트가 실패할 때가 있다. 
+  + 카카오의 우분투 서버가 죽었거나 
+  + 아니면 윈도 머신의 시간이 동기화 되어 있지 않은 경우가 있다. 
+  + 후자의 경우 시간에서 우클릭 "날짜 및 시간조정"을 클릭해 동기화 해주고, 리부팅하면 해결 
 
 ## Install zsh 
 
