@@ -69,8 +69,8 @@ wsl --setdefault <DISTRO-NAME>
 패키지 리포지토리를 한국 위치로 바꾼다. 여기서는 카카오로 바꾼다. 
 
 ```shell
-sudo sed -i 's/archive.ubuntu.com/mirror.kakao.com/g' /etc/apt/sources.list # package
-sudo sed -i 's/security.ubuntu.com/mirror.kakao.com/g' /etc/apt/sources.list # security 
+sudo sed -i 's/archive.ubuntu.com/mirror.kakao.com/g' /etc/apt/sources.list && \
+sudo sed -i 's/security.ubuntu.com/mirror.kakao.com/g' /etc/apt/sources.list
 ```
 
 ### Update packages 
