@@ -27,6 +27,7 @@ wsl --list --online
 
 ```shell
 wsl --install -d <DISTRO-NAME> 
+wsl --install -d Ubuntu
 ```
 
 - 이게 대단히 신비한 무엇은 아니다. MS Store에서 해당 배포판을 설치하는 것과 동일한 일을 수행한다. 
