@@ -84,6 +84,37 @@ sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y
   + 아니면 윈도 머신의 시간이 동기화 되어 있지 않은 경우가 있다. 
   + 후자의 경우 시간에서 우클릭 "날짜 및 시간조정"을 클릭해 동기화 해주고, 리부팅하면 해결 
 
+## Snap 지우기 
+
+https://mail.bada-ie.com/board/view/?page=1&uid=4115&category_code=jvYw%7C%7CTbxg%7C%7C&code=all&key=&keyfield=
+
+- Ubuntu의 불필요한 요소 
+- WSL2에서는 GUI 앱 실행에서 문제를 일으킨다. 
+- WSL2의 디폴트 상태에서는 systemd를 쓰지 않아서 문제가 되지 않는다. 
+  + genie를 활성화한 상태에서 문제가 되고, 지우는 것 역시 이 상태에서 지워야 한다. 
+
+```shell
+snap list
+sudo snap remove <package-names>
+```
+
+- `snap remove`에서 패키지 지우는 순서를 따져야 할 수 있다. 
+
+```shell
+sudo umount /snap/core/xxxx
+sudo apt purge snapd
+```
+
+- 해당 디렉토리가 없다면 위 명령어는 실행하지 않아도 된다. 
+
+```shell
+rm -rf ~/snap
+sudo rm -rf /snap
+sudo rm -rf /var/snap
+sudo rm -rf /var/lib/snapd
+```
+
+
 ## Install zsh 
 
 - 보다 쾌적한 터미널 환경을 위해서 zsh를 설치한다. 
