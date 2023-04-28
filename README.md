@@ -141,11 +141,10 @@ https://gist.github.com/cristian-aldea/c8f91187de922303fa10c6e5fd85e324
 
 - configure 프로세스를 다시 진행하고 싶다면, `p10k configure` 
 - `~/.p10k.zsh`를 직접 수정해도 된다. 
-```
 
 ### ~~zsh 꾸미기~~
 
-- 왠만한 p10k 써라... 
+- 왠만하면 p10k 써라... 
 
 ```shell
 cd ${ZSH_CUSTOM1:-$ZSH/custom}/plugins
