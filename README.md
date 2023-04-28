@@ -135,6 +135,12 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 - zsh를 실행하면 zsh로 들어간다. logout 후 다시 로그인하자.  
   + 실제 우분투에서는 재부팅이다. 혼동하지 말자. 
 
+### Powerlevel 10k 
+
+https://gist.github.com/cristian-aldea/c8f91187de922303fa10c6e5fd85e324
+
+### zsh 꾸미기 
+
 ```shell
 cd ${ZSH_CUSTOM1:-$ZSH/custom}/plugins
 sudo git clone https://github.com/djui/alias-tips.git
