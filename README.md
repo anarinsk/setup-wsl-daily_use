@@ -139,7 +139,7 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 
 https://gist.github.com/cristian-aldea/c8f91187de922303fa10c6e5fd85e324
 
-- configure 프로세스를 다시 진행하고 싶다면, `10k configure` 
+- configure 프로세스를 다시 진행하고 싶다면, `p10k configure` 
 - `~/.p10k.zsh`를 직접 수정해도 된다. 
 ```
 
