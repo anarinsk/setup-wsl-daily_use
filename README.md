@@ -139,7 +139,9 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 
 https://gist.github.com/cristian-aldea/c8f91187de922303fa10c6e5fd85e324
 
-### zsh 꾸미기 
+### ~~zsh 꾸미기~~
+
+- 왠만한 p10k 써라... 
 
 ```shell
 cd ${ZSH_CUSTOM1:-$ZSH/custom}/plugins
