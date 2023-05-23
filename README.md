@@ -56,6 +56,8 @@ wsl --shutdown <DISTRO-NAME>
 wsl --unregister <DISTRO-NAME>
 ```
 
+- 원도 터미널에서 프로필을 지우고 싶다면 설정에서 지우면 된다. 
+
 ### Set default Distros 
 
 ```shell
