@@ -123,8 +123,6 @@ sudo rm -rf /var/lib/snapd
 
 ## Install zsh & powerlevel10k
 
-### Powerlevel 10k 
-
 https://gist.github.com/cristian-aldea/c8f91187de922303fa10c6e5fd85e324
 
 - configure 프로세스를 다시 진행하고 싶다면, `p10k configure` 
