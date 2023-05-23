@@ -16,7 +16,7 @@ WSL 단에서 쓸 수 있는 명령어들을 알아보자.
 #### With Terminal 
 
 - Store를 쓰기 싫거나 쓸 수 없을 때 
-- Terminal에서  
+- Terminal에서 쓰는 게 멋지니까! 
 
 ```shell
 wsl -l -o
@@ -56,7 +56,7 @@ wsl --shutdown <DISTRO-NAME>
 wsl --unregister <DISTRO-NAME>
 ```
 
-- 원도 터미널에서 프로필을 지우고 싶다면 설정에서 지우면 된다. 
+- 원도 터미널에서 프로필을 지우고 싶다면 설정에서 지우면 된다. 마지막에 전체 저장하는 것을 잊지 말도록 하자.  
 
 ### Set default Distros 
 
@@ -127,12 +127,42 @@ sudo rm -rf /var/lib/snapd
 
 https://gist.github.com/cristian-aldea/c8f91187de922303fa10c6e5fd85e324
 
-- configure 프로세스를 다시 진행하고 싶다면, `p10k configure` 
-- `~/.p10k.zsh`를 직접 수정해도 된다. 
+```shell=
+# update packages
+sudo apt update
+
+# install required packages
+sudo apt install zsh git curl -y
+
+# verify zsh installation
+zsh --version
+
+# Set the default shell to zsh
+sudo chsh -s $(which zsh) $(whoami)
+
+# Install oh-my-zsh: https://ohmyz.sh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Install Powerlevel10k: https://github.com/romkatv/powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+```
+
+- zsh의 테마를 변경해야 한다. 
+
+```shell=
+# zsh 설정 열기 
+$ nano ~/.zshrc
+# ZSH_THEME="robbyrussell" -> ZSH_THEME="powerlevel10k/powerlevel10k"
+```
+
+- 셸을 다시 시작하면 powerklevel10k 설정이 뜬다. 
+    - configure 프로세스를 다시 진행하고 싶다면, `p10k configure` 
+    - `~/.p10k.zsh`를 직접 수정해도 된다. 
 
 ### ~~zsh 꾸미기~~
 
-- 왠만하면 p10k 써라... 
+- 왠만하면 p10k 써라... 이하 무시하자. 
 
 ```shell
 cd ${ZSH_CUSTOM1:-$ZSH/custom}/plugins
