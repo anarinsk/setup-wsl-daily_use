@@ -5,6 +5,8 @@ Humble daily usage of wsl
 
 WSL 단에서 쓸 수 있는 명령어들을 알아보자. 
 
+https://learn.microsoft.com/ko-kr/windows/wsl/basic-commands
+
 ### Install 
 
 #### Microsoft Store
@@ -18,16 +20,16 @@ WSL 단에서 쓸 수 있는 명령어들을 알아보자.
 - Store를 쓰기 싫거나 쓸 수 없을 때 
 - Terminal에서 쓰는 게 멋지니까! 
 
-```shell
-wsl -l -o
-wsl --list --online
+```shell=
+> wsl -l -o
+> wsl --list --online
 ```
 
 - 설치 가능한 Distro를 확인한다. 
 
-```shell
-wsl --install -d <DISTRO-NAME> 
-wsl --install -d Ubuntu
+```shell=
+> wsl --install -d <DISTRO-NAME> 
+> wsl --install -d Ubuntu
 ```
 
 - 이게 대단히 신비한 무엇은 아니다. MS Store에서 해당 배포판을 설치하는 것과 동일한 일을 수행한다. 
@@ -35,15 +37,15 @@ wsl --install -d Ubuntu
 
 ### List 
 
-```shell
-wsl --list --all 
-wsl -l 
+```shell=
+> wsl --list --all 
+> wsl -l 
 ```
 
 ### Kernel update 
 
-```shell 
-wsl --update
+```shell=
+> wsl --update
 ```
 
 - Windows Update 설정 > 고급옵션 > "Windows를 업데이트할 때 다른 Microsoft 제품에 대한 업데이트 받기" 
@@ -51,17 +53,17 @@ wsl --update
 
 ### Uninstall distros 
 
-```shell
-wsl --shutdown <DISTRO-NAME>
-wsl --unregister <DISTRO-NAME>
+```shell=
+> wsl --shutdown <DISTRO-NAME>
+> wsl --unregister <DISTRO-NAME>
 ```
 
 - 원도 터미널에서 프로필을 지우고 싶다면 설정에서 지우면 된다. 마지막에 전체 저장하는 것을 잊지 말도록 하자.  
 
 ### Set default Distros 
 
-```shell
-wsl --setdefault <DISTRO-NAME>
+```shell=
+> wsl --setdefault <DISTRO-NAME>
 ```
 
 ## Ubuntu: Quick Take-off 
@@ -70,21 +72,17 @@ wsl --setdefault <DISTRO-NAME>
 
 패키지 리포지토리를 한국 위치로 바꾼다. 여기서는 카카오로 바꾼다. 
 
-```shell
-sudo sed -i 's|archive.ubuntu.com|mirror.kakao.com|g' /etc/apt/sources.list &&
+```shell=
+> sudo sed -i 's|archive.ubuntu.com|mirror.kakao.com|g' /etc/apt/sources.list &&
 sudo sed -i 's|security.ubuntu.com|mirror.kakao.com|g' /etc/apt/sources.list
 ```
 
 ### Update packages 
 
-```shell
-sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y 
-```
-
-or
-
-```shell
-sudo apt-get update && sudo apt-get full-upgrade -y
+```shell=
+> sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y 
+#or
+> sudo apt-get update && sudo apt-get full-upgrade -y
 ```
 
 - 가끔 업데이트가 실패할 때가 있다. 
@@ -101,25 +99,25 @@ https://mail.bada-ie.com/board/view/?page=1&uid=4115&category_code=jvYw%7C%7CTbx
 - WSL2의 디폴트 상태에서는 systemd를 쓰지 않아서 문제가 되지 않는다. 
   + genie를 활성화한 상태에서 문제가 되고, 지우는 것 역시 이 상태에서 지워야 한다. 
 
-```shell
-snap list
-sudo snap remove <package-names>
+```shell=
+> snap list
+> sudo snap remove <package-names>
 ```
 
 - `snap remove`에서 패키지 지우는 순서를 따져야 할 수 있다. 
 
-```shell
-sudo umount /snap/core/xxxx
-sudo apt purge snapd
+```shell=
+> sudo umount /snap/core/xxxx
+> sudo apt purge snapd
 ```
 
 - 해당 디렉토리가 없다면 위 명령어는 실행하지 않아도 된다. 
 
-```shell
-rm -rf ~/snap
-sudo rm -rf /snap
-sudo rm -rf /var/snap
-sudo rm -rf /var/lib/snapd
+```shell=
+> rm -rf ~/snap
+> sudo rm -rf /snap
+> sudo rm -rf /var/snap
+> sudo rm -rf /var/lib/snapd
 ```
 
 
@@ -129,22 +127,22 @@ https://gist.github.com/cristian-aldea/c8f91187de922303fa10c6e5fd85e324
 
 ```shell=
 # update packages
-sudo apt update
+> sudo apt update
 
 # install required packages
-sudo apt install zsh git curl -y
+> sudo apt install zsh git curl -y
 
 # verify zsh installation
-zsh --version
+> zsh --version
 
 # Set the default shell to zsh
-sudo chsh -s $(which zsh) $(whoami)
+> sudo chsh -s $(which zsh) $(whoami)
 
 # Install oh-my-zsh: https://ohmyz.sh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+> sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Install Powerlevel10k: https://github.com/romkatv/powerlevel10k
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+> git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 ```
 
@@ -152,7 +150,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 ```shell=
 # zsh 설정 열기 
-$ nano ~/.zshrc
+> nano ~/.zshrc
 # ZSH_THEME="robbyrussell" -> ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
 
