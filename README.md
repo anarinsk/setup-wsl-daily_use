@@ -121,19 +121,7 @@ sudo rm -rf /var/lib/snapd
 ```
 
 
-## Install zsh 
-
-- 보다 쾌적한 터미널 환경을 위해서 zsh를 설치한다. 
-- `sudo -i` 상태에서 실행하면 안된다! 
-
-```shell
-apt-get install zsh
-chsh -s `which zsh`
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
-- zsh를 실행하면 zsh로 들어간다. logout 후 다시 로그인하자.  
-  + 실제 우분투에서는 재부팅이다. 혼동하지 말자. 
+## Install zsh & powerlevel10k
 
 ### Powerlevel 10k 
 
